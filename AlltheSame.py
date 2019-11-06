@@ -38,3 +38,8 @@ if __name__ == '__main__':
     assert all_the_same([]) == True
     assert all_the_same([1]) == True
     print("Coding complete? Click 'Check' to earn cool rewards!")
+
+    assert all_the_same([1,"a",1]) == False
+    assert all_the_same([600000]) == True
+    assert all_the_same([10000,99999]) == False
+    
