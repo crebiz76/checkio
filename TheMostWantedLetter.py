@@ -37,55 +37,35 @@ def checkio(text: str) -> str:
     #You should find the most frequent letter in the text. The letter returned must be in lower case.
     #While checking for the most wanted letter, casing does not matter, so for the purpose of your search, 
     #"A" == "a". Make sure you do not count punctuation symbols, digits and whitespaces, only letters.
-    
-    #0. Fetch the input data
+
+    #1. Fetch the input data
     data = text
-    print("The input is: ",data)
-
-    #1. The letter change to lower
-    low_data = data.lower()
-    print("The lower is:", low_data) 
+    #2. The letter change to lower
+    datalower = data.lower()
     
-    #2. The special character omit
-    # split_low = data.split(' ')
-    # print("Spliting:", split_low)
-    
-    alpha_data = ''
-
-    for i in low_data:
+    #3. The special character omit
+    dataomit = ''
+    for i in datalower:
         if i >= 'a' and i <= 'z':
-            alpha_data = alpha_data + i
-            print ("The alphabet is: ", alpha_data) 
-       
+            dataomit = dataomit + i
+    #4. The list of data   
+    datalist = []
+    datalist = list(dataomit)
+    datalist.sort()
+    #5. Dictionary of data
+    datadic = {}
+    for i in datalist:
+        datalist.count(i)
+        datadic[i] = datalist.count(i)
+    #6. Compare the counter    
+    cnt = 0
+    ret = ''
+    for i in datadic:
+        if datadic.get(i) > cnt:
+            cnt = datadic.get(i)
+            ret = i
 
-    print("The final is:", alpha_data)
-    
-    for j in alpha_data:
-        alpha_data 
-        print(j)
-
-
-    # vac = low.split(' ')
-    
-    # #3. Sort 
-    # #4. count
-    # print("result =", vac)
-    
-    # a = list(text)
-    # a.sort()    
-    # print("a = ", a)
-    
-    # b = text.split(' ')
-    # print("b = ",b)
-    
-    # c = set(text)
-    # print("c = ",c)
-    
-    # d = text.lower()
-    # print("d = ",d)
-    
-    
-    return 'l'
+    return ret
 
 if __name__ == '__main__':
     print("Example:")
