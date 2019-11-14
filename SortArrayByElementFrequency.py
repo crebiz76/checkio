@@ -19,7 +19,7 @@ The mission was taken from Python CCPS 109 Fall 2018. It's being taught for Ryer
 def frequency_sort(items):
     # your code here
 
-    # Case-1
+    # Case-1: 오류있음
     '''
     #1. input
     itemlist = list(set(items))
@@ -57,28 +57,104 @@ def frequency_sort(items):
     #     
 
     #1. input
-    itemtuple = {}
+    itemdict = {}
     itemlist = []
+    #itemset = {}
+
     for i in items:
         # 입력데이터의 중복 갯수를 확인
         j = items.count(i)
-        # 입력데이터를 Key값으로 중복 갯수를 Value로 Dictionary
-        itemtuple[i] = j
-        print(i, j, itemtuple)
-    
-    k = {}
-    
-    # m.append([])
+        # 입력데이터를 Key값으로 갯수를 Value로 Dictionary
+        itemdict[i] = j
+        # 입력데이터의 갯수를 리스트
+        itemlist.append(j)
+        # 입력 갯수 리스트를 순차로 정렬
+        itemlist.sort()
+        # 정렬된 리스트를 역순으로 배치(불필요)
+        #itemlist.reverse()
+        # print(i, j)
+        
+    # itemdict, itemlist)
+    print(itemdict, itemlist)
 
-    cnt = 0
-    for k in itemtuple:
-        m = []
-        m.append(k)        
-        n = m * itemtuple.get(k)
-        print(cnt, m, n)
-        cnt = cnt + 1
-    
+    # for x in itemlist:
+    #     items.count(x)  x
 
+    
+    # n = []
+    # itemlist = []
+    # for key, value in itemdict.items():
+    #     m = []
+    #     m.append(key)
+    #     n = m * value
+    #     print(key, '는', value, '개')
+    #     itemlist += n
+
+    n = []
+    itemlist = []
+    keyset = []
+    valueset = []
+    for key, value in itemdict.items():
+ 
+        keyset.append(key)
+        valueset.append(value)
+        #print(keyset, valueset)
+        valueset.sort()
+
+        #print('v=', valueset)
+    print('k=', keyset)
+    print('v=', valueset)
+
+    fin = []
+    for key in keyset:
+        print(key)
+        #print(keyset.get(key))
+
+        #t = valueset.index(keyset.get(key))
+        t = itemdict.get(key)
+        #print('t=',t)
+
+        s = valueset.index(t)
+        #print('s=',s)
+
+        fin.append(s)
+    print('fin=', fin)
+
+    u = []
+    final = [0, 0, 0]
+    for u in range(len(keyset)):
+        v = 0
+        w = 0
+        v = fin[u]
+        w = keyset[u]
+        print('u=', u, 'v=',v, 'w=',w)
+        
+        final[u] = w
+        print(final)
+
+        
+    #     u.append(k[f])
+    # print(u)
+
+
+        # m = []
+        # m.append(key)
+        # n = m * value
+        # print(key, '는', value, '개')
+        # itemlist += n
+
+    # k = {} 
+    # cnt = 0
+    # for k in itemdict:
+    #     m = []
+    #     m.append(k)        
+    #     n = m * itemdict.get(k)
+    #     #print(cnt, m, n)
+    #     #cnt = cnt + 1
+    #     itemlist += n
+
+    print(itemlist)
+    return itemlist
     '''
     #2. processing
     print('==============================')
@@ -100,7 +176,7 @@ def frequency_sort(items):
 
 if __name__ == '__main__':
     print("Example:")
-    print(frequency_sort([4, 6, 2, 2, 6, 4, 4, 4]))
+    #print(frequency_sort([4, 6, 2, 2, 6, 4, 4, 4]))
     print(frequency_sort([4, 6, 2, 2, 2, 6, 4, 4, 4]))
 
     # These "asserts" are used for self-checking and not for an auto-testing
@@ -109,4 +185,4 @@ if __name__ == '__main__':
     # assert list(frequency_sort([17, 99, 42])) == [17, 99, 42]
     # assert list(frequency_sort([])) == []
     # assert list(frequency_sort([1])) == [1]
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    # print("Coding complete? Click 'Check' to earn cool rewards!")
