@@ -8,8 +8,8 @@
 ### Time Converter(24h to 12h) - Elementary
 ### Non-unique Elements - Elementary
 ### ==============================
-### Sort Array by Element Frequency - Moderate
-### Flatten a List - Simple
+### Sort Array by Element Frequency - Moderate(X)
+### Flatten a List - Simple(X)
 ### Long Repeat - Simple
 ### Sun Angle - Elementary
 ### Bird Language = Elementary
@@ -29,7 +29,7 @@
 ### Best Stock
 ### Correct Sentence
 ### ==============================
-### Right to Left
+### Right to Left(X)
 ### Second Index
 ### Absolute Sorting
 ### The Most Numbers
