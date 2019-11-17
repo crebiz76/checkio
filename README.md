@@ -22,5 +22,22 @@
 ### Say Hi
 ### Easy Unpack
 ### Index Power
-### ==============================
 ### Digits Multiplication
+### Secret Message
+### Fizz Buzz
+### Even the Last
+### Best Stock
+### Correct Sentence
+### ==============================
+### Right to Left
+### Second Index
+### Absolute Sorting
+### The Most Numbers
+### First Word(simplified)
+### First Word
+### ThreeWords
+### Bigger Price
+### Popular Words
+### Between Markers(simplified)
+### Between Markers
+
