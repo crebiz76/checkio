@@ -7,10 +7,10 @@
 ### The Most Wanted Letter - Moderate
 ### Time Converter(24h to 12h) - Elementary
 ### Non-unique Elements - Elementary
-### ==============================
 ### Sort Array by Element Frequency - Moderate(X)
 ### Flatten a List - Simple(X)
 ### Long Repeat - Simple
+### ==============================
 ### Sun Angle - Elementary
 ### Bird Language = Elementary
 ### Pawn Brotherhood - Moderate
@@ -28,9 +28,9 @@
 ### Even the Last
 ### Best Stock
 ### Correct Sentence
-### ==============================
 ### Right to Left(X)
 ### Second Index
+### ==============================
 ### Absolute Sorting
 ### The Most Numbers
 ### First Word(simplified)
