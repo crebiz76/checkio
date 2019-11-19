@@ -2,24 +2,18 @@ def left_join(phrases):
     """
         Join strings and replace "right" to "left"
     """
-    # result = ""
-    # for i in phrases:
-    #     print('init=',i)
-    #     i.replace('right', 'left')
-    #     result = i + ','
-    #     print(result)
-    # print(result)
-    #result = ""
+    value = list(phrases)
+    valstr = ''
+    result = ''
+
+    for i in range(len(value)):        
+        valstr += str(value[i])
+        if i < (len(value)-1):
+            valstr += ','
     
-    t1 = list(phrases)
-    t2 = []
-    print(t1)
-    for i in range(len(t1)):
-        t2 = t1[i] + ','
-    
-    t2 = t2.replace("right", "left")
-    print(t2)
-    return (t2)
+    result = ''
+    result = valstr.replace('right', 'left')    
+    return (result)
 
 if __name__ == '__main__':
     print('Example:')
