@@ -34,15 +34,25 @@ def flat_list(array):
     #     #if level == 0: break
     # array = temp
     # End of Code
-    level = 1
-    temp = []
-    for i in range(len(array)):
-        if type(array[i]) == int:
-            temp.append(array[i])
+
+    # level = 1
+    # temp = []
+    # for i in range(len(array)):
+    #     if type(array[i]) == int:
+    #         temp.append(array[i])
+    #     else:
+    #         level += 1
+    #         temp += array[i]
+    # array.append(temp)
+    
+    print(array)
+
+    for i in array:
+        if type(i) != int:
+            #print('array[{}]'.format(i))
+            print('NOK')
         else:
-            level += 1
-            temp += array[i]
-    array.append(temp)
+            print('OK')
     
     return array
 
