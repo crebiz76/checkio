@@ -28,7 +28,7 @@
 ### Even the Last
 ### Best Stock
 ### Correct Sentence
-### Right to Left(X)
+### Right to Left
 ### Second Index
 ### ==============================
 ### Absolute Sorting
