@@ -1,7 +1,7 @@
 # checkio
 파이썬 코딩 연습
 
-## [HOME]
+## [HOME][08/13]
 ### All the Same //Elementary
 ### House Password//Simple
 ### The Most Wanted Letter //Moderate
@@ -17,7 +17,7 @@
 ### Xs and Os Referee - Simple
 ### The Warriors - Moderate
 
-## [ELEMENTARY]
+## [ELEMENTARY][12/21]
 ### Multiply(Intro) //Elementary
 ### Say Hi //Elementary
 ### Easy Unpack //Elementary
