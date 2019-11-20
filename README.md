@@ -2,42 +2,42 @@
 파이썬 코딩 연습
 
 ## [HOME]
-### All the Same - Elementary
-### House Password - Simple
-### The Most Wanted Letter - Moderate
-### Time Converter(24h to 12h) - Elementary
-### Non-unique Elements - Elementary
-### Sort Array by Element Frequency - Moderate(X)
-### Flatten a List - Simple(X)
-### Long Repeat - Simple
+### All the Same //Elementary
+### House Password//Simple
+### The Most Wanted Letter //Moderate
+### Time Converter(24h to 12h) //Elementary
+### Non-unique Elements //Elementary
+### Sort Array by Element Frequency //Moderate---(X)
+### Flatten a List //Simple---(X)
+### Long Repeat //Simple
+### Sun Angle //Elementary
+### Bird Language //Elementary
 ### ==============================
-### Sun Angle - Elementary
-### Bird Language = Elementary
 ### Pawn Brotherhood - Moderate
 ### Xs and Os Referee - Simple
 ### The Warriors - Moderate
 
 ## [ELEMENTARY]
-### Multiply(Intro)
-### Say Hi
-### Easy Unpack
-### Index Power
-### Digits Multiplication
-### Secret Message
-### Fizz Buzz
-### Even the Last
-### Best Stock
-### Correct Sentence
-### Right to Left
-### Second Index
+### Multiply(Intro) //Elementary
+### Say Hi //Elementary
+### Easy Unpack //Elementary
+### Index Power //Elementary
+### Digits Multiplication //Elementary
+### Secret Message //Elementary
+### Fizz Buzz //Elementary
+### Even the Last //Elementary
+### Best Stock //Elementary
+### Correct Sentence //Elementary
+### Right to Left //Elementary
+### Second Index //Elementary
 ### ==============================
-### Absolute Sorting
-### The Most Numbers
-### First Word(simplified)
-### First Word
-### ThreeWords
-### Bigger Price
-### Popular Words
-### Between Markers(simplified)
-### Between Markers
+### Absolute Sorting //Elementary
+### The Most Numbers //Elementary
+### First Word(simplified) //Elementary
+### First Word //Elementary
+### ThreeWords //Elementary
+### Bigger Price //Elementary
+### Popular Words //Elementary
+### Between Markers(simplified //Elementary)
+### Between Markers //Elementary
 
