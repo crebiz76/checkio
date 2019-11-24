@@ -14,10 +14,10 @@
 ### Bird Language //Elementary
 ### Pawn Brotherhood //Moderate---(X)
 ### Xs and Os Referee //Simple
+### The Warriors - Moderate---(X)
 ### ==============================
-### The Warriors - Moderate
 
-## [ELEMENTARY][12/21]
+## [ELEMENTARY][21/21]
 ### Multiply(Intro) //Elementary
 ### Say Hi //Elementary
 ### Easy Unpack //Elementary
@@ -30,7 +30,6 @@
 ### Correct Sentence //Elementary
 ### Right to Left //Elementary
 ### Second Index //Elementary
-### ==============================
 ### Absolute Sorting //Elementary
 ### The Most Numbers //Elementary
 ### First Word(simplified) //Elementary
@@ -40,4 +39,5 @@
 ### Popular Words //Elementary
 ### Between Markers(simplified //Elementary)
 ### Between Markers //Elementary
+### ==============================
 
