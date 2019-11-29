@@ -1,5 +1,5 @@
 # checkio
-파이썬 코딩 연습
+Practice Python Programming
 
 ## [HOME][13/13]
 ### All the Same //Elementary
@@ -41,3 +41,7 @@
 ### Between Markers //Elementary
 ### ==============================
 
+## [O'REILLY]
+### Median
+### Days Between --- Locked
+### How to Find Friends
