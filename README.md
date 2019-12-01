@@ -44,4 +44,6 @@ Practice Python Programming
 ## [O'REILLY]
 ### Median
 ### Days Between --- Locked
-### How to Find Friends
+### How to Find Friends --- (X)
+### Worth of Words
+### 
