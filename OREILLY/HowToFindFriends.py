@@ -1,13 +1,32 @@
 def check_connection(network, first, second):
     print('================')
-    nets = []; netset = {}; netsets = set()
+    cnt_net = 0; cnt_node = 0
+    nets = []
+    nodes_comb = set()
+    result = []
+    for node in network:
+        cnt_net += 1
+        nodes = node.split('-')
+        nodes_comb.update(nodes)
+        nets.append(node)
+        cnt_node = len(nodes_comb)
+    print('Nets =', cnt_net, nets)
+    print('Nodes =', cnt_node, nodes_comb)
+    
+    netset = {}; netsets = set()
     temp = []; result = []; retval = False
 
-    for net in network:
-        nets = net.split('-')
-        netset = set(nets)
-        print(nets, netset)
-        
+    fnet = []; snet = []
+
+    for net in nets:
+        print(net)
+        if first in net:
+            fnet.append(net)
+        if second in net:
+            snet.append(net)
+
+        print('first=', fnet, 'second=', snet)
+        '''
         if netsets & netset == set():
             netsets = netset
             print('Network Changed...')
@@ -17,11 +36,16 @@ def check_connection(network, first, second):
             print('Network added...')
             temp = list(netsets)
         print('netsets=', netsets)
-
-    if temp == []: result.append(list(netsets))
-    else: result.append(temp)
-    print('temp=', temp)
-    print('result=', result)
+    
+        if temp == []: result.append(list(netsets))
+        else: result.append(temp)
+        print('temp=', temp)
+        '''
+        
+    print('result=', result, len(result))
+    
+    
+    # check the network
 
     for i in result:
         if first in i and second in i:
