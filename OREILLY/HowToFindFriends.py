@@ -1,5 +1,5 @@
 def check_connection(network, first, second):
-    
+    print('================')
     nets = []; netset = {}; netsets = set()
     temp = []; result = []; retval = False
 
@@ -18,7 +18,7 @@ def check_connection(network, first, second):
             temp = list(netsets)
         print('netsets=', netsets)
 
-    if temp == []: result = [list(netsets)]
+    if temp == []: result.append(list(netsets))
     else: result.append(temp)
     print('temp=', temp)
     print('result=', result)
