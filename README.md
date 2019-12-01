@@ -41,7 +41,15 @@ Practice Python Programming
 ### Between Markers //Elementary
 ### ==============================
 
+## [ELECTRONIC STATION]
+### Restriced Sum --- (X)
+### Four To The Floor --- (X)
+### Count Consecutive Summers
+### ==============================
+
 ## [O'REILLY]
 ### Median
 ### Days Between --- Locked
-### How to Find Friends
+### How to Find Friends --- (X)
+### ==============================
+
