@@ -6,20 +6,18 @@
 
 # addition = 'addition'
 def checkio(data):
-    print(data, len(data))
-    cnt = 0; temp = 0
-
-    label: addition
-    if cnt < len(data):
-        temp += data[cnt]
-        cnt += 1
-        goto: addition
-    else:
-        print(temp)
-    return temp
-
-checkio([1, 2, 3]) == 6
-checkio([2, 2, 2, 2, 2, 2]) == 12
+    
+    # print(data, len(data))
+    # cnt = 0; temp = 0
+    # # label: addtion
+    # if cnt < len(data):
+    #     temp += data[cnt]
+    #     cnt += 1
+    #     # goto: addition
+    # else:
+    #     print(temp, cnt)
+    
+    # return temp
 
 if __name__ == '__main__':
     print("Example:")
