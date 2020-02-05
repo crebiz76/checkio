@@ -1,57 +1,59 @@
 def check_connection(network, first, second):
-    print('================')
-    cnt_net = 0; cnt_node = 0
-    nets = []
-    nodes_comb = set()
-    result = []
-    for node in network:
-        cnt_net += 1
-        nodes = node.split('-')
-        nodes_comb.update(nodes)
-        nets.append(node)
-        cnt_node = len(nodes_comb)
-    print('Nets =', cnt_net, nets)
-    print('Nodes =', cnt_node, nodes_comb)
+    # network = list(network)
+    netlist = []
+    node = []
+    nodes = {}
+    # print('network= ', network)
+    for i in network:
+        i = i.split('-')
+        netlist.append(i)
+        for j in range(len(i)):
+            node.append(i[j])
+    nodes = set(node)
+    # print('node=', node)
+    print('netlist= ', netlist)
+    # print('nodes/count= ', nodes, len(nodes))
+    temp = f'nodes/count={nodes}/{len(nodes)}'
+    print(temp)
+    print('1st=', first, '/2nd=', second)
     
-    netset = {}; netsets = set()
-    temp = []; result = []; retval = False
+    node1 = []; node2 = []; node_f = []; node_v = []
+    for j in netlist:
+        # node_f.append(j)
+        node_f.append(j[0])
+        node_f.append(j[1])
+        print(node_f)
 
-    fnet = []; snet = []
-
-    for net in nets:
-        print(net)
-        if first in net:
-            fnet.append(net)
-        if second in net:
-            snet.append(net)
-
-        print('first=', fnet, 'second=', snet)
-        '''
-        if netsets & netset == set():
-            netsets = netset
-            print('Network Changed...')
-            result.append(temp)
+        if first in j and second in j:
+            print('connect')
+        elif first in j:
+            print('1st')
+            # node1.append(j)
+            node1.append(j[0])
+            node1.append(j[1])
+            node_f.remove(j[0])
+            node_f.remove(j[1])            
+        elif second in j:
+            print('2nd')
+            # node2.append(j)            
+            node2.append(j[0])
+            node2.append(j[1])
+            node_f.remove(j[0])
+            node_f.remove(j[1])
         else:
-            netsets = netsets | netset
-            print('Network added...')
-            temp = list(netsets)
-        print('netsets=', netsets)
-    
-        if temp == []: result.append(list(netsets))
-        else: result.append(temp)
-        print('temp=', temp)
-        '''
-        
-    print('result=', result, len(result))
-    
-    
-    # check the network
+            print('non')
+            node_v.append(j[0])
+            node_v.append(j[1])
+            node_f.remove(j[0])
+            node_f.remove(j[1])
 
-    for i in result:
-        if first in i and second in i:
-            retval = True
-    print(retval)
-    return retval  
+    print('future=', node_f)
+    print('node1= ', node1)
+    print('node2= ', node2)
+    print('visit=', node_v)
+    
+    return True or False
+
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing
@@ -67,13 +69,3 @@ if __name__ == '__main__':
         ("dr101-mr99", "mr99-out00", "dr101-out00", "scout1-scout2",
          "scout3-scout1", "scout1-scout4", "scout4-sscout", "sscout-super"),
         "dr101", "sscout") == False, "I don't know any scouts."
-    assert check_connection(
-        ("night-nikola",),"nikola","night") == True, "test"
-    assert check_connection(
-        ("dr101-mr99","mr99-out00","dr101-out00","scout1-scout2",
-        "scout3-scout1","scout1-scout4","scout4-sscout","sscout-super",),
-        "dr101","sscout") == False, "Basic-Test3"
-    assert check_connection(
-        ("nikola-robin","batman-nwing","mr99-batman","mr99-robin",
-        "dr101-out00","out00-nwing",),
-        "dr101","mr99") == True, "Extra-Test3"
