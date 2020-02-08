@@ -1,23 +1,7 @@
-# sum
-# import
-# for
-# while
-# reduce
-
-# addition = 'addition'
+# The list of banned words are as follows:
 def checkio(data):
-    
-    # print(data, len(data))
-    # cnt = 0; temp = 0
-    # # label: addtion
-    # if cnt < len(data):
-    #     temp += data[cnt]
-    #     cnt += 1
-    #     # goto: addition
-    # else:
-    #     print(temp, cnt)
-    
-    # return temp
+    if len(data)==0: return 0
+    return data[0]+checkio(data[1:])
 
 if __name__ == '__main__':
     print("Example:")

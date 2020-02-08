@@ -42,7 +42,7 @@ Practice Python Programming
 ### ==============================
 
 ## [ELECTRONIC STATION]
-### Restriced Sum --- (X)
+### Restriced Sum //Elementary
 ### Four To The Floor --- (X)
 ### Count Consecutive Summers
 ### ==============================
