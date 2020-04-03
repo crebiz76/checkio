@@ -37,19 +37,33 @@ Practice Python Programming
 ### ThreeWords //Elementary
 ### Bigger Price //Elementary
 ### Popular Words //Elementary
-### Between Markers(simplified //Elementary)
+### Between Markers(simplified //Elementary
 ### Between Markers //Elementary
 ### ==============================
 
 ## [ELECTRONIC STATION]
 ### Restriced Sum //Elementary
 ### Four To The Floor --- (X)
+<<<<<<< HEAD
+### Count Consecutive Summers //Elementary
+### Speech Module //Simple
+
+=======
 ### Count Consecutive Summers
+>>>>>>> master
 ### ==============================
 
 ## [O'REILLY]
-### Median
+### Median //Elementary
 ### Days Between --- Locked
 ### How to Find Friends --- (X)
+### Worth of Words //Elementary
+### Chiper Map --- (X)
+### Striped Words --- (X)
+### Feed Pigeons --- Locked
+### Boolean Algebra --- Locked
+### Ghosts Age --- Locked
+### Friends --- Locked
+### I Love Python! //Elementary
 ### ==============================
 
