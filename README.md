@@ -44,9 +44,13 @@ Practice Python Programming
 ## [ELECTRONIC STATION]
 ### Restriced Sum //Elementary
 ### Four To The Floor --- (X)
+<<<<<<< HEAD
 ### Count Consecutive Summers //Elementary
 ### Speech Module //Simple
 
+=======
+### Count Consecutive Summers
+>>>>>>> master
 ### ==============================
 
 ## [O'REILLY]
