@@ -11,7 +11,7 @@ def checkio(text):
         if temp < 'a' or temp > 'z':
             result += temp
         print(i, temp)
-    retval = len(result.strip())
+    retval = len(result.strip('.'))
     print('result=', retval)
 
     return retval
